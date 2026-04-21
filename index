@@ -264,30 +264,6 @@
       console.log("✅ Popup system disabled");
       console.log("✅ Thai scheduled model switch enabled");
     });
-/* =========================================================
-   SHOW ALL CONTENT AFTER RELEASE TIME
-========================================================= */
-
-function applyVisibilityByTime() {
-  const isReleased = shouldUseRealModel();
-
-  const page = document.getElementById("page-root");
-
-  if (!page) return;
-
-  if (isReleased) {
-    // ====== AFTER RELEASE ======
-    page.classList.remove("hidden");
-
-    console.log("🎉 RELEASED: Show all content");
-
-  } else {
-    // ====== BEFORE RELEASE ======
-    page.classList.add("hidden");
-
-    console.log("⏳ BEFORE RELEASE: Hide content");
-  }
-}
   </script>
 </body>
 </html>
